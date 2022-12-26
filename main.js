@@ -115,6 +115,7 @@ function new_notification(data) {
   pictureFrame.className = "pic_frame";
   let avatar_src = document.createElement("img");
   avatar_src.src = data.avatar;
+  avatar_src.alt=data.name;
   pictureFrame.appendChild(avatar_src);
 
   //user name
@@ -143,6 +144,7 @@ function new_notification(data) {
     inner_div.className = "inner_div_rev";
     let ref_box = document.createElement("img");
     ref_box.className = "ref_src";
+    ref_box.alt=data.id;
     ref_box.src = data.refrence_src;
     inner_div.appendChild(ref_box);
   }
