@@ -30,6 +30,7 @@ img {
   display: flex;
   width:inherit;
   align-items: center;
+  height: 6%;
   justify-content: space-between;
 }
 .top button {
@@ -45,6 +46,7 @@ img {
 .notification {
   width: 100%;
   margin-top: 5px;
+  min-height: 12.5%; 
   position: relative;
   border-radius: 10px;
   display: flex;
