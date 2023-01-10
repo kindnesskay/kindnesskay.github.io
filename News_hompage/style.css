@@ -23,7 +23,7 @@ body {
   min-height: fit-content;
 }
 main{
-  padding: 5%;
+  padding:clamp(5%,6%,12%);
   padding-top: 0;
 }
 
@@ -39,7 +39,7 @@ main{
 nav {
   position: relative;
   max-height: 50px;
-  padding: 2%;
+  padding: 4%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,7 +65,6 @@ ul {
 .content {
   height: auto;
   width: 70%;
-  padding-bottom: 5%;
 }
 
 .banner_image {
@@ -74,7 +73,7 @@ ul {
   overflow: hidden;
 }
 .infomation {
-  height: 40%;
+  height:auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -87,7 +86,7 @@ ul {
 .text {
   width: 58%;
   color: var(--grayishBlue);
-  font-size: clamp(2vw, 2.5vw, 15px);
+  font-size: clamp(1.5vw, 2.5vw, 15px);
 }
 .more {
   width: 40%;
@@ -120,7 +119,7 @@ ul {
 
 .info_content {
   font-weight: 400;
-  font-size: clamp(2vw, 2.2vw, 1em);
+  font-size: clamp(10px,2.5vw,15px);
   padding: 2%;
   display: grid;
   justify-content: space-around;
