@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rating app</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+  <body>
+    <div class="container">
+        <div id='rate' class="area">
+          <div class="content">
+            <div class="star" style="margin-top:5%">
+                <img src="Assets/images/icon-star.svg" alt="star">
+            </div>
+
+          <header><h1>How did we do?</h1></header>
+          <div class="para">
+              <p>
+                  please let us know how we did with your support<br/>
+                  request.All feedback is appreciated to help us<br/>
+                  improve our offering.
+                </p>
+            </div>
+            <div class="rating">
+                <div class="score_box">
+                   <button  id="1" class="score">1</button>
+                   <button  id="2"class="score">2</button>
+                   <button  id="3"class="score">3</button>
+                   <button  id="4"class="score">4</button>
+                   <button  id="5"class="score">5</button>
+                </div>
+                <button id="sub" class="submit">SUBMIT</button>
+            </div>
+            </div>
+        </div>   
+
+            <div id="thanks" class="area hide">
+              <div class="content">
+                <div class="banner">
+                  <img src="./Assets/images/illustration-thank-you.svg" alt="banner" />
+                    <div class="rating_display">
+                      <p id="no_rating"></p>
+                    </div>
+                    <h1>Thank you!</h1>
+                </div>
+                <div class="para">
+                  <p>we appreciate you taking the time to give a rating.<br/>
+                  if you ever need more support,dont hesitate to <br/>
+                  get in touch!</p>
+                </div>
+              </div>
+    </div>
+
+    <script src="./main.js">
+  </script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 310px;
+  
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner img {
+  width: 60%;
+  height: auto;
+  margin-top:5% ;
+}
+.para {
+  font-size: clamp(10px, 3vw, 15px);
+  font-weight: bold;
+  color: gray;
+  margin-top:5% ;
+  line-height: 150%;
+}
+#thanks .para{
+  text-align: center;
+}
+
+.area {
+  position: relative;
+  background-color: hsl(213, 19%, 18%);
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  max-width: 450px;
+  max-height:450px;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+
+h1 {
+  color: white;
+  margin-top: 3%;
+}
+
+.rating_display {
+  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  text-align: center;
+  padding: 5%;
+  margin-top: 5%;
+  color: hsl(25, 97%, 53%);
+}
+
+.score {
+  border-radius: 50%;
+  font-size: 20px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  color: grey;
+  border: none;
+  margin-top:3% ;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.star {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-bottom: 5%;
+}
+.star img {
+  height: auto;
+  width: 40%;
+}
+.scoreActive {
+  background-color: orangered;
+  color: white;
+}
+
+.submit {
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+  width: 100%;
+  padding: 3%;
+  border-radius: 20px;
+  border: none;
+  margin-top: 5%;
+}
+.score_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.rating {
+  margin-top: 5%;
+}
+
+.score:hover {
+  color: white;
+  background-color: orange;
+}
+
+.submit:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
+
+.hide {
+  display: none;
+}
