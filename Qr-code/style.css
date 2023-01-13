@@ -13,14 +13,14 @@ img{
   width: 100%;
 }
 body{
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   min-width: 300px;
   background-color: var(--LightGray);
 }
-.container{
+main{
   border-radius: 10px;
   padding: 10px;
   height: 350px;
@@ -44,7 +44,7 @@ body{
   height: 45%;
   text-align: center;
 }
-h2{
+h1{
   font-size: clamp(15px,3.5vw,20px);
   color:var(--DarkBlue);
 }
