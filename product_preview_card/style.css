@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium";
+}
+
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--Cream);
+}
+
+main {
+  display: flex;
+  width: auto;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.image_box {
+  width: 50%;
+  height: 100%;
+  background-image: url("./assets/images/image-product-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+.info {
+  font-size: clamp(10px, 12px, 32px);
+  background-color: var(--White);
+  padding: 2%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.info p {
+  color: var(--Dark-grayish-blue);
+  font-weight: 200;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.cart_btn {
+  color: var(--Cream);
+  font-size: clamp(10px, 1.5vw, 14px);
+  background-color: var(--Dark-cyan);
+  font-weight: 100;
+  width: 90%;
+  height: 30px;
+  padding: 2%;
+  border-radius: 5px;
+  border: none;
+}
+
+.cart_btn:hover {
+  background-color: darkgreen;
+  cursor: pointer;
+}
+
+.para {
+  font-size: clamp(8px, 14px, 14px);
+  border: none;
+  color: var(--Dark-grayish-blue);
+  font-weight: 400;
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+  color: var(--Dark-grayish-blue);
+  align-items: center;
+}
+.bottom p {
+  margin-bottom: 5%;
+}
+.bottom p :first-child {
+  color: var(--Dark-cyan);
+  font-size: 20px;
+}
+@media screen and (min-width: 375.9px) {
+  main {
+    aspect-ratio: 3/2;
+    max-height: 300px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .image_box {
+    width: 100%;
+    aspect-ratio: 3/2;
+    background-image: url("./assets/images/image-product-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .info {
+    gap: 10px;
+    padding: 15px;
+    width: 100%;
+    font-size: 15px;
+  }
+  .para {
+    font-size: 14px;
+  }
+}
